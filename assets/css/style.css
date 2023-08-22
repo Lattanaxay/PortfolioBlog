@@ -307,7 +307,19 @@ input {
   column-gap: 0.3rem;
 }
 /*=============== Services ===============*/
+.services__container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
 
+.services__item {
+  border: 1px solid var(--border-color);
+  padding: 2.5rem 1.25rem 1.875rem;
+}
+
+.services__icon {
+  width: 32px;
+} 
 /*=============== Resume ===============*/
 
 /*=============== Skills ===============*/
