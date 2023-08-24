@@ -1,10 +1,10 @@
-'use strict';
+
 /*=============== Active Link =============== */
 
 /*=============== Mixitup Filter =============== */
 let mixerProjects = mixitup('.projects__container', {
     selectors: {
-        target: '.blog-item'
+        target: '.project__item'
     },
     animation: {
         duration: 300
