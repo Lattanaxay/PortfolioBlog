@@ -44,11 +44,11 @@ contactMessage = document.getElementById("contact-message");
 const sendEmail = (e) => {
   e.preventDefault();
 
-  //chheck if the field has a value
+  //check if the field has a value
   if (
-    contactName.value === "" ||
-    contactEmail.value === "" ||
-    Message.value === ""
+    contactName.value === '' ||
+    contactEmail.value === '' ||
+    Message.value === ''
      ) {
     // add and remove color
     contactMessage.classList.remove("color-light");
@@ -67,7 +67,7 @@ const sendEmail = (e) => {
     .then(() => {
       //show massage and add color, window + dot to open emoji
       contactMessage.classList.add('color-light');
-      contactMessage.textContent = 'Message sent ✔️'
+      contactMessage.textContent = 'Message sent ✅ ';
 
       //remove message after 5seconds
       setTimeout(() => {
@@ -77,6 +77,11 @@ const sendEmail = (e) => {
     (error) => {
       alert('OOPs! SONTHING WENT WRONG....', error)
     });
+
+    // clear input field
+    contactName.value = '';
+    contactEmail.value = '';
+    Message.value = '';
   }
 };
 

@@ -766,16 +766,16 @@ content: '';
   box-shadow: inset 0 0 5px 0 #fff;
 }
 
-.contact__message p {
+.contact__message {
   position: absolute;
-  bottom: 33%;
+  bottom: 34%;
   left: 0;
   font-family: var(--mono-font);
   color:#fff;
 }
 
 .color-light {
-  opacity: 0;
+  opacity: 1;
 }
 
 .color-dark {
