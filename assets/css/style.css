@@ -111,8 +111,8 @@ input {
 }
 
 .section {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .section__title {
@@ -199,6 +199,7 @@ input {
   display: none;
 }
 /* Active Link */
+
 .active-link {
   opacity: 0.5;
 }
@@ -228,14 +229,15 @@ input {
 .scroll-header .nav__link:hover,
 .scroll-header .active-link {
   color: var(--primary-color);
-
 }
+
+
 /*=============== Home ===============*/
 .home {
   background: url(../img/home-bg.jpg);
   background-size: cover;
   background-position: 50%;
-  padding-top: 5.5rem;
+  padding-top: 5.5rem; 
   margin-bottom: 2.5rem;
   position: relative;
 }
@@ -692,6 +694,7 @@ content: '';
 
 .post__title {
   margin-bottom: 1.1em;
+  color: var(--text-color);
 }
 
 .post__description {
@@ -797,13 +800,15 @@ content: '';
   color:#fff;
 }
 
+.color-dark {
+  opacity: 0.4;
+}
+
+
 .color-light {
   opacity: 1;
 }
 
-.color-dark {
-  opacity: 0.4;
-}
 
 .contact__button {
   margin-top: 1.875rem;
@@ -817,7 +822,91 @@ content: '';
   text-align: center;
 }
 /*=============== Blog Details ===============*/
+.blog__header {
+  height: 400px;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
 
+.blog__header::before {
+  content: '';
+  background: var(--linear-gradient);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.blog__details {
+  background-color: #fff;
+  padding: 3rem 4.25rem 3.75rem;
+  margin-top: -16rem;
+  box-shadow: 0 1px 21px rgb(0 0 0 / 14%);
+  z-index: 10;
+  position: relative;
+  border-radius: 8px;
+
+}
+
+.back__to-home {
+  display: inline-flex;
+  column-gap: 0.6rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.post__details-title {
+  text-transform: uppercase;
+  margin-top: 1.67em;
+  margin-bottom: 0.84em;
+}
+
+.post__detail-date {
+  color: var(--text-color-alt);
+  margin-bottom: 1.12em;
+}
+
+.post__detail {
+  margin-bottom: 1.12em;
+  text-align: justify;
+}
+
+figure {
+  padding-top: 0.625rem;
+  padding-bottom: 2.2rem;
+}
+
+figcaption {
+  color: var(--text-color-alt);
+  font-style: italic;
+  font-family: var(--mono-font);
+  margin-top: 1.4em;
+}
+
+.post__social-share {
+  display: inline-flex;
+  column-gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.post__share {
+  margin-top: -2px;
+  color: var(--text-color);
+}
+
+.post__share-link {
+  color: var(--title-color);
+  font-size: 1.75rem;
+  opacity: 0.4;
+  margin-right: 0.14em;
+}
+
+.post__share-link:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
 /*=============== Style Switcher ===============*/
 
 /*=============== BreakPoints ===============*/
