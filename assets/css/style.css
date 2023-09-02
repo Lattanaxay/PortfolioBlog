@@ -911,7 +911,13 @@ figcaption {
   opacity: 1;
 }
 /*=============== Style Switcher ===============*/
-
+.style__switcher {
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  padding: 0.625rem;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.4);
+}
 /*=============== BreakPoints ===============*/
 /* for large devices */
 @media screen and (max-width: 1200px) {
